@@ -1,0 +1,20 @@
+---
+default:
+    lib/DDG/Spice/Example.pm:
+        output: lib/DDG/Spice/<:$ia_package_name:>.pm
+        group:  code
+
+    t/Example.t:
+        output: t/<:$ia_package_name:>.t
+        group:  test
+
+    share/spice/example/example.handlebars:
+        output:   share/spice/<:$lia_name:>.handlebars
+        group:    handlebars
+        optional: 1
+
+    share/spice/example/example.js:
+        output:   share/spice/<:$lia_name:>.js
+        group:    javascript
+        optional: 1
+...
